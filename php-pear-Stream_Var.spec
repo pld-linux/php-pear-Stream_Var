@@ -25,7 +25,7 @@ and allows stream based access to any variable in any scope. Arrays are
 treated as directories, so it`s possible to replace temporary
 directories and files in your applications with variables.
 
-This class has in PEAR status: %{_status}.
+In PEAR status of this package is: %{_status}.
 
 %description -l pl
 %{_pearname} mo¿e byæ zarejestrowany jako strumieñ za pomoc± funkcji
