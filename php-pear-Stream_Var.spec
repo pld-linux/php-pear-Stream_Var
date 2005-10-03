@@ -5,22 +5,23 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - allows stream based access to any variable
-Summary(pl):	%{_pearname} - oparty na strumieniu dostêp do dowolnej zmiennej 
+Summary(pl):	%{_pearname} - oparty na strumieniu dostêp do dowolnej zmiennej
 Name:		php-pear-%{_pearname}
 Version:	1.0.0
-Release:	2.1
+Release:	2.2
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	32ce52ccebd1f7ccdc5f12965a13781b
 URL:		http://pear.php.net/package/Stream_Var/
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
+Requires:	php-common >= 3:4.3.2
 Requires:	php-pear
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-%{_pearname} can be registered as a stream with stream_register_wrapper 
+%{_pearname} can be registered as a stream with stream_register_wrapper
 and allows stream based access to any variable in any scope. Arrays are
 treated as directories, so it`s possible to replace temporary
 directories and files in your applications with variables.
