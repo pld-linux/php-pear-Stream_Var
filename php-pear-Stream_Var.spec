@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - allows stream based access to any variable
-Summary(pl.UTF-8):   %{_pearname} - oparty na strumieniu dostęp do dowolnej zmiennej
+Summary(pl.UTF-8):	%{_pearname} - oparty na strumieniu dostęp do dowolnej zmiennej
 Name:		php-pear-%{_pearname}
 Version:	1.0.0
 Release:	3
