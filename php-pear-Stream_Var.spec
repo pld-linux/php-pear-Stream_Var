@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - allows stream based access to any variable
-Summary(pl):	%{_pearname} - oparty na strumieniu dostêp do dowolnej zmiennej
+Summary(pl.UTF-8):   %{_pearname} - oparty na strumieniu dostÄ™p do dowolnej zmiennej
 Name:		php-pear-%{_pearname}
 Version:	1.0.0
 Release:	3
@@ -30,11 +30,11 @@ directories and files in your applications with variables.
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-%{_pearname} mo¿e byæ zarejestrowany jako strumieñ za pomoc± funkcji
-stream_register_wrapper i pozwala na oparty na strumieniu dostêp do
-dowolnej zmiennej. Tablice s± trakowane jako katalogi, wiêc mo¿liwe jest
-zast±pienie tymczasowych plików oraz katalogów w aplikacjach zmiennymi.
+%description -l pl.UTF-8
+%{_pearname} moÅ¼e byÄ‡ zarejestrowany jako strumieÅ„ za pomocÄ… funkcji
+stream_register_wrapper i pozwala na oparty na strumieniu dostÄ™p do
+dowolnej zmiennej. Tablice sÄ… trakowane jako katalogi, wiÄ™c moÅ¼liwe jest
+zastÄ…pienie tymczasowych plikÃ³w oraz katalogÃ³w w aplikacjach zmiennymi.
 
 Ta klasa ma w PEAR status: %{_status}.
 
