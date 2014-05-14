@@ -1,13 +1,11 @@
-%include	/usr/lib/rpm/macros.php
-%define		_class		Stream
-%define		_subclass	Var
 %define		_status		stable
-%define		_pearname	%{_class}_%{_subclass}
+%define		_pearname	Stream_Var
+%include	/usr/lib/rpm/macros.php
 Summary:	%{_pearname} - allows stream based access to any variable
 Summary(pl.UTF-8):	%{_pearname} - oparty na strumieniu dostęp do dowolnej zmiennej
 Name:		php-pear-%{_pearname}
 Version:	1.1.0
-Release:	1
+Release:	2
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -16,24 +14,26 @@ URL:		http://pear.php.net/package/Stream_Var/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
-Requires:	php-common >= 3:4.3.2
+Requires:	php(core) >= 4.3.2
 Requires:	php-pear
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-%{_pearname} can be registered as a stream with stream_register_wrapper
-and allows stream based access to any variable in any scope. Arrays are
-treated as directories, so it`s possible to replace temporary
-directories and files in your applications with variables.
+%{_pearname} can be registered as a stream with
+stream_register_wrapper and allows stream based access to any variable
+in any scope. Arrays are treated as directories, so it`s possible to
+replace temporary directories and files in your applications with
+variables.
 
 In PEAR status of this package is: %{_status}.
 
 %description -l pl.UTF-8
 %{_pearname} może być zarejestrowany jako strumień za pomocą funkcji
 stream_register_wrapper i pozwala na oparty na strumieniu dostęp do
-dowolnej zmiennej. Tablice są trakowane jako katalogi, więc możliwe jest
-zastąpienie tymczasowych plików oraz katalogów w aplikacjach zmiennymi.
+dowolnej zmiennej. Tablice są trakowane jako katalogi, więc możliwe
+jest zastąpienie tymczasowych plików oraz katalogów w aplikacjach
+zmiennymi.
 
 Ta klasa ma w PEAR status: %{_status}.
 
@@ -53,4 +53,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc install.log
 %doc docs/%{_pearname}/*
 %{php_pear_dir}/.registry/*.reg
-%{php_pear_dir}/%{_class}/*.php
+%{php_pear_dir}/Stream/*.php
