@@ -4,12 +4,12 @@
 Summary:	%{_pearname} - allows stream based access to any variable
 Summary(pl.UTF-8):	%{_pearname} - oparty na strumieniu dostęp do dowolnej zmiennej
 Name:		php-pear-%{_pearname}
-Version:	1.1.0
-Release:	2
+Version:	1.2.0
+Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	b852891189314ad94517be8c8d77c231
+# Source0-md5:	b3c2d947373c0e85f548d32eb761ae3b
 URL:		http://pear.php.net/package/Stream_Var/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
