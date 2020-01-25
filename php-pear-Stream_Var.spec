@@ -1,6 +1,5 @@
 %define		_status		stable
 %define		_pearname	Stream_Var
-%include	/usr/lib/rpm/macros.php
 Summary:	%{_pearname} - allows stream based access to any variable
 Summary(pl.UTF-8):	%{_pearname} - oparty na strumieniu dostęp do dowolnej zmiennej
 Name:		php-pear-%{_pearname}
